@@ -1,0 +1,52 @@
+﻿@page
+@model RazorPagesTutorial.Pages.Products.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Product[0].P_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Product[0].P_Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Product[0].P_Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Product[0].P_Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Product[0].P_Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Product) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.P_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.P_Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.P_Image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.P_Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.P_Description)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
