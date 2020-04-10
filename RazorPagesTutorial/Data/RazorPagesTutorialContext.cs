@@ -20,5 +20,6 @@ namespace RazorPagesTutorial.Data
         {
             modelBuilder.Entity<Product>().ToTable("PRODUCTS");
         }
+
     }
 }

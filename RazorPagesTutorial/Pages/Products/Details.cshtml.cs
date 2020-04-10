@@ -19,21 +19,38 @@ namespace RazorPagesTutorial.Pages.Products
             _context = context;
         }
 
+
+        public List<Product> Products { get; set; }
+
         public Product Product { get; set; }
+
+        public int SelectedId { get; set; }
+
+
+        //public void OnGet(int? Id) {
+        //    RedirectToPage("/Product/Details?ID=" + Id);        
+        //}
+
+        //public IActionResult Index()
+        //{
+
+
+        //}
+
+        //public IActionResult OnPost()
+        //{
+        //    return new RedirectToPageResult("/Product/Details?ID=1" + SelectedId);
+        //}
+
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            
 
-            Product = await _context.Product.AsNoTracking().FirstOrDefaultAsync(m=>m.ID == id);
+            Product = await _context.Product.AsNoTracking().FirstOrDefaultAsync(m => m.ID == id);
+            Products = await _context.Product.ToListAsync();
 
-            if (Product == null)
-            {
-                return NotFound();
-            }
+            
             return Page();
         }
     }

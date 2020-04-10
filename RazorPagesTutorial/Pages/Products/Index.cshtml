@@ -7,9 +7,17 @@
 
 <h1>Index</h1>
 
+<div id="Create">
+    <a class ="btn btn-large btn-info" href="Products/Create">Create</a>
+</div>
+
+
 <table class="table">
     <thead>
         <tr>
+            <th>
+
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Product[0].P_Name)
             </th>
@@ -25,12 +33,21 @@
             <th>
                 @Html.DisplayNameFor(model => model.Product[0].P_Description)
             </th>
+            
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model.Product) {
         <tr>
+            <td>
+                <div id="Update">
+                    <a class="btn btn-large btn-info" asp-page="/Products/Edit" asp-route-ID="@item.ID">Edit</a>
+                </div>
+                <div id="Update">
+                    <a class="btn btn-large btn-danger" asp-page="/Products/Delete" asp-route-ID="@item.ID">Delete</a>
+                </div>
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.P_Name)
             </td>

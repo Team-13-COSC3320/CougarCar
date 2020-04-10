@@ -21,7 +21,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="Product.P_Category" class="control-label"></label>
-                <select asp-for="Product.P_Category" class="form-control"></select>
+                <select asp-for="Product.P_Category" class="form-control">
+                    <option> Cat1, </option>
+                    <option>Cat2</option>
+                    <option>Cate3</option>
+                    <option>Cat4</option>
+                    <option>Cat5</option>
+                </select>
                 <span asp-validation-for="Product.P_Category" class="text-danger"></span>
             </div>
             <div class="form-group">
