@@ -15,11 +15,11 @@ namespace RazorPagesTutorial.Models
         [ForeignKey("Product")]
         public int I_PID { get; set; }
 
-        public int I_Price { get; set; }
+        //public int I_Price { get; set; }
 
         public int I_Amount { get; set; }
 
-        public string I_Status { get; set; }
+        public bool I_Status { get; set; }
         //Diff types of status:
         //In stock, Need to reorder (trigger), Out of Stock
     }
