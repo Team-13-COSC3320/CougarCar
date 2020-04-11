@@ -30,7 +30,7 @@
                 <a asp-page="/Products/ProductList"
                    class="btn btn-primary">Back</a>
                 <a href="#" class="btn btn-primary">Buy</a>
-                <a href="#" class="btn btn-primary">Add Review</a>
+                <a class="btn btn-large btn-info" asp-page="/Reviews/ReviewCreate" asp-route-ID="@Model.Product.ID">Create Review</a>
             </div>
         </div>
     </div>

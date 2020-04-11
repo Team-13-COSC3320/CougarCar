@@ -30,7 +30,7 @@ namespace RazorPagesTutorial.Data
             List<Review> validReviews = new List<Review>();
             foreach (Review r in Review)
             {
-                if (r.P_ID == id)
+                if (r.ID == id)
                 {
                     validReviews.Add(r);
                 }

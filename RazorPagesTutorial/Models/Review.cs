@@ -16,7 +16,7 @@ namespace LibraryData.Models
         public int? R_Star { get; set; }
 
         [ForeignKey("Product")]
-        public int P_ID {get; set;}
+        public int ID {get; set;}
     }
 
 }
