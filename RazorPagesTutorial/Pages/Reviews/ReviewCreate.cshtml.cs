@@ -65,26 +65,6 @@ namespace RazorPagesTutorial
             var star = Review.R_Star;
             var userid = Review.R_UID;
 
-            //_context.Review.FromSqlInterpolated(
-            //     $"USE [DB_A573D4_team13] GO " +
-            //     $"DECLARE	@return_value int " +
-            //     $"EXEC	@return_value = [dbo].[ReviewMasterInsertUpdateDelete] " +
-            //     $"@R_ID = {rid}, " +
-            //     $"@R_UID = {userid}, " +
-            //     $"@R_TITLE = N'{title}', " +
-            //     $"@R_CONTENT = N'{content}', " +
-            //     $"@R_STAR = {star}, " +
-            //     $"@StatementType = N'Insert', " +
-            //     $"@ID = {pid} "
-            //     +
-            //     $"SELECT 'Return Value' = @return_value "
-            //     +
-            //     $"GO "
-            //    );
-            // $"USE [DB_A573D4_team13] GO DECLARE	@return_value int EXEC	@return_value = [dbo].[ReviewMasterInsertUpdateDelete] @R_ID = {rid}, @R_UID = {userid}, @R_TITLE = N'{title}', @R_CONTENT = N'{content}', @R_STAR = {star}, @StatementType = N'Insert', @ID = {pid} SELECT 'Return Value' = @return_value GO");
-            //_context.Review.FromSqlRaw(
-            //    "ReviewMasterInsertUpdateDelete @p1,@p2,@p3,@p4,@p5,@p6,@p7", rid, userid, title, content, star, "Insert", pid);
-
             string connection = "Data Source=sql5053.site4now.net;User ID=DB_A573D4_team13_admin;Password=Team13shop;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
             SqlConnection sqlConnection = new SqlConnection(connection);
