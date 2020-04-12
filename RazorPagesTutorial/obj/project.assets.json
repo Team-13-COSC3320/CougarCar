@@ -8711,26 +8711,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\qs\\.nuget\\packages\\": {}
+    "C:\\Users\\bryan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\qs\\Documents\\GitHub\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj",
+      "projectUniqueName": "C:\\Users\\bryan\\OneDrive\\Documents\\GitHub\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj",
       "projectName": "RazorPagesTutorial",
-      "projectPath": "C:\\Users\\qs\\Documents\\GitHub\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj",
-      "packagesPath": "C:\\Users\\qs\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\qs\\Documents\\GitHub\\CougarCar\\RazorPagesTutorial\\obj\\",
+      "projectPath": "C:\\Users\\bryan\\OneDrive\\Documents\\GitHub\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj",
+      "packagesPath": "C:\\Users\\bryan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bryan\\OneDrive\\Documents\\GitHub\\CougarCar\\RazorPagesTutorial\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\qs\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\bryan\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8792,7 +8790,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   },

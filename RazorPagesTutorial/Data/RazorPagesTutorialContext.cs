@@ -17,12 +17,15 @@ namespace RazorPagesTutorial.Data
 
         public DbSet<RazorPagesTutorial.Models.Product> Product { get; set; }
 
+        public DbSet<RazorPagesTutorial.Models.Orders> Orders { get; set; }
+
         public DbSet<Review> Review {get; set;}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>().ToTable("PRODUCTS");
             modelBuilder.Entity<Review>().ToTable("REVIEW");
+            modelBuilder.Entity<Orders>().ToTable("ORDERS");
         }
 
         internal List<Review> GetReviewsOnProduct(int? id)
