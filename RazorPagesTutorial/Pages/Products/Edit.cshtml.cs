@@ -30,7 +30,7 @@ namespace RazorPagesTutorial.Pages.Products
                 return NotFound();
             }
 
-            Product = await _context.Product.FirstOrDefaultAsync(m => m.ID == id);
+            Product = await _context.Product.FirstOrDefaultAsync(m => m.P_ID == id);
 
             if (Product == null)
             {
@@ -56,7 +56,7 @@ namespace RazorPagesTutorial.Pages.Products
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ProductExists(Product.ID))
+                if (!ProductExists(Product.P_ID))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace RazorPagesTutorial.Pages.Products
 
         private bool ProductExists(int id)
         {
-            return _context.Product.Any(e => e.ID == id);
+            return _context.Product.Any(e => e.P_ID == id);
         }
     }
 }

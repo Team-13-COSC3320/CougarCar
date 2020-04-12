@@ -48,7 +48,7 @@ namespace RazorPagesTutorial.Pages.Products
         {
             
 
-            Product = await _context.Product.AsNoTracking().FirstOrDefaultAsync(m => m.ID == id);
+            Product = await _context.Product.AsNoTracking().FirstOrDefaultAsync(m => m.P_ID == id);
             Products = await _context.Product.ToListAsync();
             productSelectList = new SelectList(Products, "ID", "P_Name");
             SelectedId = 1;

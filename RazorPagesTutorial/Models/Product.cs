@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RazorPagesTutorial.Models
 {
@@ -11,7 +13,8 @@ namespace RazorPagesTutorial.Models
         {
             Cat1, Cat2, Cate3, Cat4, Cat5
         }
-        public int ID { get; set; }
+        [Key]
+        public int P_ID { get; set; }
         public string P_Name { get; set; }
         public string P_Category { get; set; }
         public Byte[]? P_Image { get; set; }

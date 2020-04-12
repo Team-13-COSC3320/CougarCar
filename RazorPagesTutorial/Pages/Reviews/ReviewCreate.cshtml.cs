@@ -40,7 +40,7 @@ namespace RazorPagesTutorial
                 return NotFound();
             }
 
-            Product = await _context.Product.FirstOrDefaultAsync(m => m.ID == id);
+            Product = await _context.Product.FirstOrDefaultAsync(m => m.P_ID == id);
 
             if (Product == null)
             {
@@ -59,7 +59,7 @@ namespace RazorPagesTutorial
 
             Product = await _context.Product.FindAsync(id);
             var rid = Review.R_ID;
-            var pid = Product.ID;
+            var pid = Product.P_ID;
             var content = Review.R_Content;
             var title = Review.R_Title;
             var star = Review.R_Star;

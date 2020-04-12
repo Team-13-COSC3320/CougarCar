@@ -29,7 +29,7 @@ namespace RazorPagesTutorial.Pages.Products
                 return NotFound();
             }
 
-            Product = await _context.Product.FirstOrDefaultAsync(m => m.ID == id);
+            Product = await _context.Product.FirstOrDefaultAsync(m => m.P_ID == id);
 
             if (Product == null)
             {

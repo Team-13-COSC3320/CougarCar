@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "odnEmkO9ZjffwajBZIa5B6JYyM/fh56N1DZH5m36T4W9fOjH7IVyYr2YQcKTo/+cm68kgRYs+mhPEEhEbz3pZA==",
+  "dgSpecHash": "b7sti7rDgmngcynLfL9TerU8IFHdcvKtV+ufitE6aERuynI7g6JhhO8RU0VKnoBZ+poWIKnbNvcm20+6KC7q5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\qs\\source\\repos\\RazorPagesTutorial\\RazorPagesTutorial.csproj",
+  "projectFilePath": "C:\\Users\\qs\\Documents\\GitHub\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\qs\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.7\\microsoft.aspnet.razor.3.2.7.nupkg.sha512",
     "C:\\Users\\qs\\.nuget\\packages\\microsoft.aspnet.webpages\\3.2.7\\microsoft.aspnet.webpages.3.2.7.nupkg.sha512",
