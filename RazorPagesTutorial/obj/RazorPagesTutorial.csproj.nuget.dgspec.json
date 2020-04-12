@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gamer\\Source\\Repos\\Team-13-COSC3320\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj": {}
+    "C:\\Users\\bryan\\OneDrive\\Documents\\GitHub\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gamer\\Source\\Repos\\Team-13-COSC3320\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj": {
+    "C:\\Users\\bryan\\OneDrive\\Documents\\GitHub\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gamer\\Source\\Repos\\Team-13-COSC3320\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj",
+        "projectUniqueName": "C:\\Users\\bryan\\OneDrive\\Documents\\GitHub\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj",
         "projectName": "RazorPagesTutorial",
-        "projectPath": "C:\\Users\\gamer\\Source\\Repos\\Team-13-COSC3320\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj",
-        "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gamer\\Source\\Repos\\Team-13-COSC3320\\CougarCar\\RazorPagesTutorial\\obj\\",
+        "projectPath": "C:\\Users\\bryan\\OneDrive\\Documents\\GitHub\\CougarCar\\RazorPagesTutorial\\RazorPagesTutorial.csproj",
+        "packagesPath": "C:\\Users\\bryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bryan\\OneDrive\\Documents\\GitHub\\CougarCar\\RazorPagesTutorial\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\bryan\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

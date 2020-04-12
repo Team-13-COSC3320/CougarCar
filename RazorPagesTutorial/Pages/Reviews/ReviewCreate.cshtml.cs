@@ -40,7 +40,7 @@ namespace RazorPagesTutorial
                 return NotFound();
             }
 
-            Product = await _context.Product.FirstOrDefaultAsync(m => m.ID == id);
+            Product = await _context.Product.FirstOrDefaultAsync(m => m.P_ID == id);
 
             if (Product == null)
             {
@@ -59,11 +59,31 @@ namespace RazorPagesTutorial
 
             Product = await _context.Product.FindAsync(id);
             var rid = Review.R_ID;
-            var pid = Product.ID;
+            var pid = Product.P_ID;
             var content = Review.R_Content;
             var title = Review.R_Title;
             var star = Review.R_Star;
             var userid = Review.R_UID;
+
+            //_context.Review.FromSqlInterpolated(
+            //     $"USE [DB_A573D4_team13] GO " +
+            //     $"DECLARE	@return_value int " +
+            //     $"EXEC	@return_value = [dbo].[ReviewMasterInsertUpdateDelete] " +
+            //     $"@R_ID = {rid}, " +
+            //     $"@R_UID = {userid}, " +
+            //     $"@R_TITLE = N'{title}', " +
+            //     $"@R_CONTENT = N'{content}', " +
+            //     $"@R_STAR = {star}, " +
+            //     $"@StatementType = N'Insert', " +
+            //     $"@ID = {pid} "
+            //     +
+            //     $"SELECT 'Return Value' = @return_value "
+            //     +
+            //     $"GO "
+            //    );
+            // $"USE [DB_A573D4_team13] GO DECLARE	@return_value int EXEC	@return_value = [dbo].[ReviewMasterInsertUpdateDelete] @R_ID = {rid}, @R_UID = {userid}, @R_TITLE = N'{title}', @R_CONTENT = N'{content}', @R_STAR = {star}, @StatementType = N'Insert', @ID = {pid} SELECT 'Return Value' = @return_value GO");
+            //_context.Review.FromSqlRaw(
+            //    "ReviewMasterInsertUpdateDelete @p1,@p2,@p3,@p4,@p5,@p6,@p7", rid, userid, title, content, star, "Insert", pid);
 
             string connection = "Data Source=sql5053.site4now.net;User ID=DB_A573D4_team13_admin;Password=Team13shop;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 

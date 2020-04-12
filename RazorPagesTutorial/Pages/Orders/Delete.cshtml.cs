@@ -29,9 +29,9 @@ namespace RazorPagesTutorial.Pages.Products
                 return NotFound();
             }
 
-            Product = await _context.Product.FirstOrDefaultAsync(m => m.P_ID == id);
+            Orders = await _context.Product.FirstOrDefaultAsync(m => m.P_ID == id);
 
-            if (Product == null)
+            if (Orders == null)
             {
                 return NotFound();
             }
@@ -45,11 +45,11 @@ namespace RazorPagesTutorial.Pages.Products
                 return NotFound();
             }
 
-            Product = await _context.Product.FindAsync(id);
+            Orders = await _context.Product.FindAsync(id);
 
-            if (Product != null)
+            if (Orders != null)
             {
-                _context.Product.Remove(Product);
+                _context.Product.Remove(Orders);
                 await _context.SaveChangesAsync();
             }
 
